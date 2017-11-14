@@ -16,6 +16,8 @@ class ViewController: UIViewController {
     
     self.loginUser("Tran Quoc Bao", password: "12345678")
     
+    self.registerUser("Huynh Tran Dinh Vi", password: "12345678")
+    
   }
 
   override func didReceiveMemoryWarning() {
@@ -26,6 +28,10 @@ class ViewController: UIViewController {
   // MARK: Functions
   
   func loginUser(name: String, password: String) {
+    print("Username: \(name), Password: \(password)")
+  }
+  
+  func registerUser(name: String, password: String) {
     print("Username: \(name), Password: \(password)")
   }
 
